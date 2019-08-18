@@ -3,7 +3,7 @@ import { observer, inject } from 'mobx-react';
 import { withStyles } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import { withRouter } from 'react-router-dom';
-import Home from '@material-ui/icons/HomeRounded';
+import Phone from '@material-ui/icons/PhoneAndroidRounded';
 
 const styles = theme => ({
     root: {
@@ -26,20 +26,20 @@ const styles = theme => ({
 
 @withStyles(styles)
 @withRouter
-@inject('dataStore', 'notificationStore')
+@inject('dataStore')
 @observer
-class HomeComponent extends React.Component {
+class SecondComponent extends React.Component {
     render() {
-        const { classes, notificationStore } = this.props;
+        const { classes } = this.props;
         return (
             <div className={classes.root}>
                 <div style={{ width: '100%', height: '60px' }}></div>
                 <div className={classes.iconContainer}>
-                    <Home className={classes.icon} onClick={() => notificationStore.openNotification('info', 'It\'s alright')}/>
+                    <Phone className={classes.icon} />
                 </div>
-                <Typography className={classes.text} variant="h5" align="center">Home</Typography>
+                <Typography className={classes.text} variant="h5" align="center">Home 2</Typography>
             </div>
         );
     }
 }
-export default HomeComponent;
+export default SecondComponent;

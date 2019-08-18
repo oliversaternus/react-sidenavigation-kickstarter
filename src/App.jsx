@@ -1,9 +1,8 @@
 import { Switch, Route, withRouter } from 'react-router-dom';
-import FirstComponent from './components/FirstComponent';
-import SecondComponent from './components/SecondComponent';
-import HomeComponent from './components/HomeComponent';
+import Home from './views/home/Home';
+import Settings from './views/settings/Settings';
 import SideNavigation from './components/SideNavigation';
-import NotificationComponent from './components/NotificationComponent'
+import NotificationComponent from './components/NotificationComponent';
 import React from "react";
 
 @withRouter
@@ -14,9 +13,8 @@ class App extends React.Component {
                 <SideNavigation>
                     <NotificationComponent>
                         <Switch>
-                            <Route exact path='/page1' component={FirstComponent} />
-                            <Route exact path='/page2' component={SecondComponent} />
-                            <Route component={HomeComponent} />
+                            <Route path='/settings' component={Settings} />
+                            <Route component={Home} />
                         </Switch>
                     </NotificationComponent>
                 </SideNavigation>

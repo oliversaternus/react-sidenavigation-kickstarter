@@ -28,7 +28,7 @@ const styles = theme => ({
 @withRouter
 @inject('dataStore')
 @observer
-class FirstComponent extends React.Component {
+class Home extends React.Component {
     render() {
         const { classes } = this.props;
         return (
@@ -37,9 +37,9 @@ class FirstComponent extends React.Component {
                 <div className={classes.iconContainer}>
                     <Laptop className={classes.icon} />
                 </div>
-                <Typography className={classes.text} variant="h5" align="center">Page 1</Typography>
+                <Typography className={classes.text} variant="h5" align="center">Home</Typography>
             </div>
         );
     }
 }
-export default FirstComponent;
+export default Home;
