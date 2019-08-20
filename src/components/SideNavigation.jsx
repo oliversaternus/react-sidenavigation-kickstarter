@@ -94,7 +94,7 @@ const styles = theme => ({
     navigationMenu: {
         width: 56,
         height: '100%',
-        backgroundColor: '#202020',
+        backgroundColor: '#212529',
         position: 'absolute',
         top: 0,
         left: 0
@@ -115,19 +115,19 @@ const styles = theme => ({
         cursor: 'pointer',
         transition: 'background-color 0.175s linear',
         '&:hover': {
-            backgroundColor: '#303030'
+            backgroundColor: '#2b3036'
         }
     },
     navMenuIcon: {
-        fill: '#707070',
-        height: 28,
-        width: 28,
+        fill: '#62727f',
+        height: 24,
+        width: 24,
         transition: 'fill 0.1s linear'
     },
     navigationSubMenu: {
         width: 184,
         height: '100%',
-        backgroundColor: '#404040',
+        backgroundColor: '#31373d',
         position: 'absolute',
         top: 0,
         left: 56
@@ -135,27 +135,26 @@ const styles = theme => ({
     navSubMenuTitle: {
         width: 'calc(100% - 24px)',
         height: 56,
-        borderBottom: '2px solid #202020',
+        borderBottom: '2px solid #212529',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        color: '#b0b0b0',
+        color: '#c3cfd8',
         fontFamily: 'sans-serif',
-        fontSize: 16,
-        fontWeight: 'bold',
+        fontSize: 14,
         paddingLeft: 24
     },
     navSubMenuItem: {
         width: 'calc(100% - 24px)',
-        color: '#b0b0b0',
+        color: '#c3cfd8',
         fontFamily: 'sans-serif',
-        fontSize: 16,
+        fontSize: 14,
         paddingLeft: 24,
-        paddingTop: 16,
-        paddingBottom: 16,
+        paddingTop: 12,
+        paddingBottom: 12,
         cursor: 'pointer',
         '&:hover': {
-            backgroundColor: '#4b4b4b'
+            backgroundColor: '#3d434a'
         }
     },
     menuButton: {
@@ -243,7 +242,7 @@ class SideNavigation extends React.Component {
                                     null)}
                                 onClick={() => this.goTo(link.location)}
                                 key={link.name}
-                                style={isSelected ? { backgroundColor: '#565656' } : null}>
+                                style={isSelected ? { backgroundColor: '#454e57' } : null}>
                                 {link.name}
                             </div>
                         );
