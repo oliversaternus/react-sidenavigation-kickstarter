@@ -8,6 +8,7 @@ import Phone from '@material-ui/icons/PhoneAndroidRounded';
 const styles = theme => ({
     root: {
         flex: '1 1 auto',
+        height: '100%',
         backgroundColor: theme.palette.secondary.main
     },
     icon: {

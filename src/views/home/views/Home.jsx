@@ -8,6 +8,7 @@ import Laptop from '@material-ui/icons/LaptopWindowsRounded';
 const styles = theme => ({
     root: {
         flex: '1 1 auto',
+        minHeight: '100%',
         backgroundColor: theme.palette.secondary.main
     },
     icon: {

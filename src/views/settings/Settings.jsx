@@ -8,13 +8,11 @@ import React from "react";
 class Settings extends React.Component {
     render() {
         return (
-            <div>
-                <Switch>
-                    <Route exact path='/settings/account' component={AccountSettings} />
-                    <Route exact path='/settings/company' component={CompanySettings} />
-                    <Route component={AppSettings} />
-                </Switch>
-            </div>
+            <Switch>
+                <Route exact path='/settings/account' component={AccountSettings} />
+                <Route exact path='/settings/company' component={CompanySettings} />
+                <Route component={AppSettings} />
+            </Switch>
         );
     }
 }

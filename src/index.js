@@ -23,7 +23,7 @@ const theme = createMuiTheme({
       contrastText: '#ffffff',
     },
     secondary: {
-      main: '#ffffff',
+      main: '#ebeef0',
       contrastText: '#000000',
     },
     action: {
