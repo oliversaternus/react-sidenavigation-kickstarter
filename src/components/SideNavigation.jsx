@@ -160,7 +160,7 @@ const styles = theme => ({
     },
     menuButton: {
         position: 'fixed',
-        top: 8,
+        top: 4,
         left: 8
     },
     menuIcon: {
@@ -219,7 +219,7 @@ class SideNavigation extends React.Component {
             <div className={classes.drawerContent}>
                 <div className={classes.navigationMenu}>
                     <div className={classes.navMenuLogo}>
-                        <ReactLogo height={36} width={36} fill={'#4676bf'} />
+                        <ReactLogo height={36} width={36} fill={'#479bcf'} />
                     </div>
                     <div className={classes.navMenuItem} onClick={() => this.setSelectedTab('home')}>
                         <HomeIcon className={classNames(classes.navMenuIcon,
