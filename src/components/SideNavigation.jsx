@@ -114,6 +114,8 @@ const styles = theme => ({
         alignItems: 'center',
         justifyContent: 'center',
         cursor: 'pointer',
+        userSelect: 'none',
+        '-webkit-tap-highlight-color': 'transparent',
         transition: 'background-color 0.175s linear',
         '&:hover': {
             backgroundColor: '#2b3036'
@@ -153,6 +155,8 @@ const styles = theme => ({
         paddingLeft: 24,
         paddingTop: 12,
         paddingBottom: 12,
+        userSelect: 'none',
+        '-webkit-tap-highlight-color': 'transparent',
         cursor: 'pointer',
         '&:hover': {
             backgroundColor: '#3d434a'
